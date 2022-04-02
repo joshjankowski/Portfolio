@@ -3,7 +3,7 @@
 HTML and CSS
 ## Screenshot
 
-Click here: ![img](/Images/capture.PNG) to see the screenshot.
+Click here: ![img](./Images/capture.PNG) to see the screenshot.
 
 ## Usage
 
