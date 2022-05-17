@@ -1,13 +1,10 @@
 # Portfolio
 
-HTML and CSS
-## Screenshot
-
-Click here: ![img](./Images/Capture.PNG) to see the screenshot.
+Here is my updated portfolio showing the current works of an aspiring developer.
 
 ## Usage
 
-This is a refactoring of a preexisting CSS and HTML file. The goal is to clean up the code so that it has proper syntax.
+Use to review my current skillset and see if I am a right fit for the job.
 
 ## URL
 
