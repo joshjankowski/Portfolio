@@ -1,0 +1,58 @@
+.content-1 {
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  grid-area: header;
+}
+
+.content-2 {
+  background-image: url(../images/background7.jpg);
+  background-size: cover;
+}
+
+.content-3 {
+  background-image: url(../images/background8.jpg);
+  background-size: cover;
+}
+
+.content-4 {
+  background-image: url(../images/background9.jpg);
+  background-size: cover;
+}
+
+.content-5 {
+  background-image: url(../images/background10.jpg);
+  background-size: cover;
+}
+
+.content-6 {
+  background-image: url(../images/background11.jpg);
+  background-size: cover;
+}
+
+.content:hover .overlay-p {
+  opacity: 0.5;
+}
+
+.content {
+  position: relative;
+}
+
+.overlay-p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #787979;
+}
+
+.content .p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: -1px -1px 0 #000, 1px 5px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
