@@ -1,0 +1,220 @@
+:root {
+  --hover-color: #a3cefc;
+}
+
+* {
+  font-family: "Libre Baskerville", serif;
+}
+
+header {
+  position: absolute;
+  background-color: whitesmoke;
+  height: 3em;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(116, 150, 173, 0.808);
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: rgba(30, 57, 74, 0.433);
+  height: 6em;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  margin-top: 3.5em;
+}
+
+nav {
+  margin: 3em;
+  width: 35vw;
+}
+
+section {
+  margin: 3em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.anime {
+    background-color: rgb(255, 255, 255);
+    height: 3em;
+    width: 3em;
+    /* animation-play-state: var(--animps); */
+    transition: transform 1s linear;
+}
+
+.header:hover .anime {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+    animation: left-to-right 5s ease-in forwards infinite alternate;
+}
+
+.header:active .anime {
+    color: black;
+    animation-play-state: paused;
+}
+
+@keyframes left-to-right {
+    100% {
+       transform: translateX(100vw);
+    }
+    0% {
+       transform: translateX(0%);  
+    }
+}
+
+.body {
+  display: flex;
+  max-width: 100%;
+}
+
+.title {
+  padding: 0.5em;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.true-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  margin-left: 10em;
+}
+
+.links {
+  padding: 0.5em;
+  font-size: 0.75rem;
+}
+
+.links:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+}
+
+.footer {
+  margin: 1.5rem;
+  display: flex;
+}
+
+.icon {
+  font-size: 2.75rem;
+  margin: 0.25rem;
+}
+
+.secret-agent {
+  font-size: 2.75rem;
+}
+
+.photo {
+  position: relative;
+  width: 100%;
+}
+
+.profile-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+.src {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-text {
+  margin-top: 1em;
+}
+
+.icon:hover {
+  color: var(--hover-color);
+}
+
+h4:hover {
+  color: var(--hover-color);
+}
+
+a {
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      flex-direction:column;
+    }
+      footer {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(30, 57, 74, 0.433);
+        width: 100%;
+        max-height: 100%;
+      }
+      
+    .fa-solid {
+        font-size: 0.75rem;
+        margin: 0.25rem;
+      }
+  }
+
+.body { 
+  opacity: 0;
+  transition: opacity .5s;
+}
+
