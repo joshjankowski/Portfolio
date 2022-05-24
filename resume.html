@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script defer src="https://kit.fontawesome.com/81f64fdf9e.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script defer src="./assets/javascript/node_modules/swup/dist/swup.js"></script> -->
+    <!-- <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
+    <script defer type="text/javascript" src="./assets/javascript/javascript.js"></script>
+
+    <title>Joshua Jankowski's Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="anime"><i class="fa-solid fa-user-secret secret-agent"></i></div>
+    </header>
+    <main>
+        <nav>
+            <h1>Josh Jankowski</h1>
+            <div class="true-header">
+                <div class="title">Full Stack Web Developer</div>
+                <div class="nav">
+                    <span class="links" onclick="transitionToPage('./index.html')">Home</span>
+                    <span class="links" onclick="transitionToPage('./assets/pdf/resume.pdf')">Resume</span>
+                    <span class="links" onclick="transitionToPage('./projects.html')">Projects</span>
+                    <span class="links" onclick="transitionToPage('./contact.html')">Contact</span>
+                </div>
+            </div>
+        </nav>
+        <div class="body" id="body">       
+                <iframe src="./pdfviewer.html" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="footer" id="call">
+            <i class="fa-solid fa-phone icon"></i>
+            <div class="f-text">
+                <h4>Call</h4>
+                <p>C: 206.227.4606</p>
+            </div>
+        </div>
+        <div class="footer" id="email"><i class="fa-solid fa-envelope icon"></i>
+            <div class="f-text">
+                <h4>Email</h4>
+                <a href="Mailto:joshjankowski@gmail.com"><p>joshjankowski@gmail.com</p></a>
+            </div>
+        </div>
+        <div class="footer" id="add"><i class="fa-solid fa-plus icon"></i>
+            <div class="f-text">
+                <h4>Follow Me</h4>
+                <a href="https://www.facebook.com/HPnotiQJosh"><i class="fa-brands fa-facebook small-icon"></i></a>
+                <a href="https://www.linkedin.com/in/joshuajankowski/"><i class="fa-brands fa-linkedin small-icon"></i></a>
+                <a href="https://github.com/joshjankowski/Portfolio"><i class="fa-brands fa-github small-icon"></i></a>
+            </div>
+        </div>
+        <div class="footer" id="copyright"><i class="fa-solid fa-copyright icon"></i>
+            <div class="f-text">
+                <h4>Copyright</h4>
+                <p>J Cubed LLC, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
