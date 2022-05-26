@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
     <script defer src="https://kit.fontawesome.com/81f64fdf9e.js" crossorigin="anonymous"></script>
     <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- <script defer src="./assets/javascript/node_modules/swup/dist/swup.js"></script> -->
-    <!-- <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
     <script defer type="text/javascript" src="./assets/javascript/javascript.js"></script>
 
     <title>Joshua Jankowski's Portfolio</title>
@@ -24,31 +23,41 @@
         <div class="anime"><i class="fa-solid fa-user-secret secret-agent"></i></div>
     </header>
     <main>
-        <nav>
-            <h1>Josh Jankowski</h1>
-            <div class="true-header">
+        <nav class="navbar">
+            <div class="brand-title">
+                <h1>Josh Jankowski</h1>
                 <div class="title">Full Stack Web Developer</div>
-                <div class="nav">
-                    <span class="links" onclick="transitionToPage('./index.html')">Home</span>
-                    <span class="links" onclick="transitionToPage('./assets/pdf/resume.pdf')">Resume</span>
-                    <span class="links" onclick="transitionToPage('./projects.html')">Projects</span>
-                    <span class="links" onclick="transitionToPage('./contact.html')">Contact</span>
-                </div>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul class="mobile-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./assets/pdf/resume.pdf">Resume</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <span class="links" onclick="transitionToPage('./index.html')">Home</span>
+                <span class="links" onclick="transitionToPage('./assets/pdf/resume.pdf')">Resume</span>
+                <span class="links" onclick="transitionToPage('./projects.html')">Projects</span>
+                <span class="links" onclick="transitionToPage('./contact.html')">Contact</span>
             </div>
         </nav>
         <div class="body" id="body">
             <section class="photo">
-                    <img class="profile-pic" src="./assets/images/josh.png"
-                        alt="Josh Jankowski's picture">
+                <img class="profile-pic" src="./assets/images/josh.png" alt="Josh Jankowski's picture">
                 <div class="overlay">
                     <img src="./assets/images/joshcolor.png" alt="Josh's Alternate Picture" class="src">
                 </div>
             </section>
             <section class="about-me">
-                <div>
+                <div class="about-me-column">
                     <h2>Hello,</h2><br>
                     <h3>a bit about me:</h3>
-                    <p class="main-text">Recently graduated from the University of San Diego     California Full Stack
+                    <p class="main-text">Recently graduated from the University of San Diego California Full Stack
                         coding bootcamp. I have experience in HTML, CSS, Javascript, Node.js, React, Express.js, and
                         mySQL. My goal is to obtain a job as a software engineer.
                     </p>
@@ -67,14 +76,17 @@
         <div class="footer" id="email"><i class="fa-solid fa-envelope icon"></i>
             <div class="f-text">
                 <h4>Email</h4>
-                <a href="Mailto:joshjankowski@gmail.com"><p>joshjankowski@gmail.com</p></a>
+                <a href="Mailto:joshjankowski@gmail.com">
+                    <p>joshjankowski@gmail.com</p>
+                </a>
             </div>
         </div>
         <div class="footer" id="add"><i class="fa-solid fa-plus icon"></i>
             <div class="f-text">
                 <h4>Follow Me</h4>
                 <a href="https://www.facebook.com/HPnotiQJosh"><i class="fa-brands fa-facebook small-icon"></i></a>
-                <a href="https://www.linkedin.com/in/joshuajankowski/"><i class="fa-brands fa-linkedin small-icon"></i></a>
+                <a href="https://www.linkedin.com/in/joshuajankowski/"><i
+                        class="fa-brands fa-linkedin small-icon"></i></a>
                 <a href="https://github.com/joshjankowski"><i class="fa-brands fa-github small-icon"></i></a>
             </div>
         </div>

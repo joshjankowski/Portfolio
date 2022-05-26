@@ -193,7 +193,7 @@ a {
     color: black;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     body {
       flex-direction:column;
     }
@@ -211,8 +211,11 @@ a {
         font-size: 0.75rem;
         margin: 0.25rem;
       }
-  }
-
+  } */
+iframe {
+  width: 640px;
+  height: 412px;
+}
 .body { 
   opacity: 0;
   transition: opacity .5s;

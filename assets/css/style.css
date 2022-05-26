@@ -54,6 +54,13 @@
 }
 
 .content .p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   font-weight: bold;
@@ -76,4 +83,35 @@
   color: white;
   padding: 1em;
   margin-left: 1em;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+}
+
+.color-icon {
+  color: white; 
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+@media (max-width: 450px) {
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  margin: 1rem;
+  width: 90%;
+}
+.content .p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  margin-top: 0.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-shadow: -1px -1px 0 #000, 1px 5px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 }
