@@ -17,3 +17,7 @@ toggleButton.addEventListener('click', () => {
     console.log("hello govna")
     navbarLinks.classList.toggle('active')
 } )
+
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
