@@ -28,6 +28,15 @@
   background-image: url(../images/background11.jpg);
   background-size: cover;
 }
+.content-7 {
+  background-image: url(../images/petconnect.png);
+  background-size: cover;
+}
+
+.content-8 {
+  background-image: url(../images/workforce.png);
+  background-size: cover;
+}
 
 .each-card {
   display: flex;
@@ -81,18 +90,6 @@ margin-bottom: 1rem;
   grid-template-columns: 470px 470px;
 }
 
-@media (max-width: 450px) {
-  .body {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 350px;
-  }
-
-  .each-card {
-    margin-bottom: 1rem;
-  }
-}
-
 .hover-2 {
   --c: #000000; /* the color */
   --b: .1em;    /* border length*/
@@ -135,4 +132,16 @@ margin-bottom: 1rem;
      calc(100% - var(--d)) 100%, 
      0% 100%
    );
+}
+
+@media (max-width: 450px) {
+  .body {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 350px;
+  }
+
+  .each-card {
+    margin-bottom: 1rem;
+  }
 }
