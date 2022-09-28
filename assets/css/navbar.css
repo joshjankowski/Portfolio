@@ -27,9 +27,9 @@
 }
 
 /* Fade out the second bar */
-.change .bar2 {
+/* .change .bar2 {
   opacity: 0;
-}
+} */
 
 /* Rotate last bar */
 .change .bar3 {

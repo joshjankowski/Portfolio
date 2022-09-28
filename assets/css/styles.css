@@ -25,7 +25,7 @@ footer {
   display: flex;
   justify-content: center;
   bottom: 0;
-  background-color: rgba(30, 57, 74, 0.433);
+  background-color: rgb(45, 84, 108);
   height: 6em;
   width: 100%;
 }
